@@ -1,24 +1,29 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
-<div class="bs5-grid-container text-center">
+<div class="container-fluid">
+
     <div class="row">
+        <div class="col-sm-3">
             <img src="../imgs/google.png" class="logo">
-        <nav class="navbar navbar-light bg-light">
-            <form class="form-inline">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="width: 30%;"> 
-            </form>
-            </nav>
+        </div>
+        <div class="col-sm-9">
+            <div class="search-bar">
+                <form class="input-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                    </span>
+                </form>
+            </div>
+        </div>
     </div>
 
     <div class="row">
-        <div class="col-sm">
+        <div class="col-sm-12">
             
-            <div class="row">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">I'm Feeling Lucky</button>
-            </div>
-            
-        </div>
+        </div> 
     </div>
 </div>
 
@@ -26,10 +31,34 @@
 <style>
     .logo {
         position: absolute;
-        top: 10px; 
-        left: 10px; 
+        top: 10px;
+        left: 10px;
         z-index: 1000;
         width: 20rem;
-        padding: 2%;
+        margin-top: 2rem;
+        margin-left: 3rem;
+    }
+
+    .search-bar {
+        margin: 0 auto;
+        max-width: 50rem;
+        margin-top: 5rem;
+        margin-left: -10rem;
+    }
+
+    .search-bar input[type="text"] {
+        padding: 10px;
+        border-radius: 20px 0 0 20px;
+        border: 1px solid #dcdcdc;
+        box-shadow: none;
+        border-right: none;
+    }
+
+    .search-bar button {
+        border-radius: 0 20px 20px 0;
+        border: 1px solid #dcdcdc;
+        background-color: #f8f8f8;
+        box-shadow: none;
+        padding: 0.9rem 2rem;
     }
 </style>
