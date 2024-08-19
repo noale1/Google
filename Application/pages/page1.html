@@ -1,107 +1,166 @@
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEARCH RESULTS</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+        .logo {
+            width: 12rem;
+            margin-top: 2.8rem;
+            margin-left: -10vw;
+        }
 
-<div class="container-fluid">
+        .search-bar {
+            max-width: 50rem;
+            margin: 3rem 0 3rem -10vw; /* Adjusted margin to move it closer */
+            padding-left: 0; /* Removed padding-left, not needed */
+        }
 
-    <div class="row">
-        <div class="col-sm-3">
-            <img src="../imgs/google.png" class="logo">
-        </div>
-        <div class="col-sm-9">
-            <div class="search-bar">
-                <form class="input-group">
-                    <input type="text" class="form-control" placeholder="Search">
-                    <span class="input-group-btn">
-                        <button class="btn btn-default" type="button">
-                            <span class="glyphicon glyphicon-search"></span>
-                        </button>
-                    </span>
-                </form>
-            </div>
-        </div>
-    </div>
+        .search-bar input[type="text"] {
+            padding: 10px;
+            border-radius: 20px 0 0 20px;
+            border: 1px solid #dcdcdc;
+            box-shadow: none;
+            border-right: none;
+        }
 
-    <div class="row">
-        <div class="col-sm-12">
-            <div class="container search-results">
-                <header style="font-size: 24px; line-height: 1.8;">Olympics</header>
-                <div class="result-item">
-                    <img src="../imgs/olympics.png" class="website-logo">
-                    <a href="https://olympics.com/en/" class="website-link">Olympics | Olympic Games, Medals, Results & Latest News</a>
-                    <p class="result-url">https://olympics.com/en/</p>
-                    <p class="result-description">Official website of the Olympics. Access breaking sports news, watch video highlights, original sports series and relive the best Olympic moments.</p>
+        .search-bar button {
+            border-radius: 0 20px 20px 0;
+            border: 1px solid #dcdcdc;
+            background-color: #f8f8f8;
+            box-shadow: none;
+            padding: 0.62rem 2rem;
+        }
 
-                    <a href="https://olympics.com/en/" class="website-link">Paris 2024</a>
-                    <p class="result-description" style="text-indent: 20px;">Welcome to the Paris 2024 Paralympics Games website ...</p>
-                    <a href="https://olympics.com/en/" class="website-link" style="text-indent: 20px;">Au revoir</a>
-                    <p class="result-description" style="text-indent: 20px;">Overall Schedule - Swimming - 24 July - Basketball - Athletics - ...</p>
-                    <a href="https://olympics.com/en/" class="website-link" style="text-indent: 20px;">Opening Ceremony</a>
-                    <p class="result-description" style="text-indent: 20px;">For the first time in Summer Olympics history, Paris 2024 is ...</p>
-                </div>
-                <div class="result-item">
-                    <img src="../imgs/wiki.png" class="website-logo">
-                    <a href="#" class="website-link">Olympic Games</a>
-                    <p class="result-url">https://en.wikipedia.org/wiki/Olympic_Games</p>
-                    <p class="result-description">The modern Olympic Games are the world's leading international sporting events. They feature summer and winter sports competitions in which thousands of ...</p>
-                </div>
-                <div class="result-item">
-                    <img src="../imgs/nbc.png" class="website-logo">
-                    <a href="#" class="website-link">NBC Olympics: Paris 2024 Olympic Games</a>
-                    <p class="result-url">https://www.nbcolympics.com/</p>
-                    <p class="result-description">Visit NBCOlympics.com for Olympics live streams, highlights, schedules, results, news, athlete bios and more from Paris 2024 and Milano Cortina 2026.</p>
-                </div>
-                <div class="result-item">
-                    <img src="../imgs/youtube.png" class="website-logo">
-                    <a href="#" class="website-link">Olympics</a>
-                    <p class="result-url">https://www.youtube.com/olympics</p>
-                    <p class="result-description">Welcome to the Olympics YouTube channel, where the Games never end! ...more ...more oly.ch/Olympics. Subscribe. Home. Videos. Shorts. Live. Podcasts.</p>
-                </div>
-            </div>
-        </div> 
-    </div>
-</div>
+        .navbar {
+            margin-top: 0rem;
+            background-color: transparent;
+            border-bottom: 1px solid #d2d2d2;
+            border-top: transparent;
+            border-left:  transparent;
+            border-right: transparent;
+            left: 0;
+            width: 100%;
+        }
+        .navbar .container {
+            padding-left: 0; 
+            padding-right: 0;
+        }
+        .navbar-default .navbar-toggle {
+            border: none; 
+        }
+        .navbar-default .navbar-nav > li > a {
+            color: #555555;
+        }
 
+        .navbar-default .navbar-nav > li > a:hover {
+            color: #000000; 
+        }
 
-<style>
-    .logo {
-        position: absolute;
-        top: 10px;
-        left: 10px;
-        z-index: 1000;
-        width: 20rem;
-        margin-top: 2rem;
-        margin-left: 3rem;
-    }
-
-    .search-bar {
-        margin: 0 auto;
-        max-width: 50rem;
-        margin-top: 5rem;
-        margin-left: -10rem;
-    }
-
-    .search-bar input[type="text"] {
-        padding: 10px;
-        border-radius: 20px 0 0 20px;
-        border: 1px solid #dcdcdc;
-        box-shadow: none;
-        border-right: none;
-    }
-
-    .search-bar button {
-        border-radius: 0 20px 20px 0;
-        border: 1px solid #dcdcdc;
-        background-color: #f8f8f8;
-        box-shadow: none;
-        padding: 0.9rem 2rem;
-    }
-    .website-link {
+        .website-link {
         font-size: large;
         line-height: 1.8;
-    }
-    .website-logo {
-        width: 30px;
-        margin-right: 5px;
-        margin-bottom: 5px;
-        margin-top: 5px;
-    }
-</style>
+        }
+
+        .website-logo {
+            width: 30px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            margin-top: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3 text-center">
+                <img src="../imgs/google.png" class="logo" alt="Logo">
+            </div>
+            <div class="col-sm-9">
+                <div class="search-bar">
+                    <form class="input-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button">
+                                <span class="glyphicon glyphicon-search"></span>
+                            </button>
+                        </span>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">All</a></li>
+                        <li><a href="#">Images</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Videos</a></li>
+                        <li><a href="#">Shopping</a></li>
+                        <li><a href="#">Books</a></li>
+                        <li><a href="#">Maps</a></li>
+                        <li><a href="#">More</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- End Navbar -->
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="container search-results">
+                    <header style="font-size: 24px; line-height: 1.8;">Olympics</header>
+                    <div class="result-item">
+                        <img src="../imgs/olympics.png" class="website-logo">
+                        <a href="https://olympics.com/en/" class="website-link">Olympics | Olympic Games, Medals, Results & Latest News</a>
+                        <p class="result-url">https://olympics.com/en/</p>
+                        <p class="result-description">Official website of the Olympics. Access breaking sports news, watch video highlights, original sports series and relive the best Olympic moments.</p>
+    
+                        <a href="https://olympics.com/en/" class="website-link">Paris 2024</a>
+                        <p class="result-description" style="text-indent: 20px;">Welcome to the Paris 2024 Paralympics Games website ...</p>
+                        <a href="https://olympics.com/en/" class="website-link" style="text-indent: 20px;">Au revoir</a>
+                        <p class="result-description" style="text-indent: 20px;">Overall Schedule - Swimming - 24 July - Basketball - Athletics - ...</p>
+                        <a href="https://olympics.com/en/" class="website-link" style="text-indent: 20px;">Opening Ceremony</a>
+                        <p class="result-description" style="text-indent: 20px;">For the first time in Summer Olympics history, Paris 2024 is ...</p>
+                    </div>
+                    <div class="result-item">
+                        <img src="../imgs/wiki.png" class="website-logo">
+                        <a href="#" class="website-link">Olympic Games</a>
+                        <p class="result-url">https://en.wikipedia.org/wiki/Olympic_Games</p>
+                        <p class="result-description">The modern Olympic Games are the world's leading international sporting events. They feature summer and winter sports competitions in which thousands of ...</p>
+                    </div>
+                    <div class="result-item">
+                        <img src="../imgs/nbc.png" class="website-logo">
+                        <a href="#" class="website-link">NBC Olympics: Paris 2024 Olympic Games</a>
+                        <p class="result-url">https://www.nbcolympics.com/</p>
+                        <p class="result-description">Visit NBCOlympics.com for Olympics live streams, highlights, schedules, results, news, athlete bios and more from Paris 2024 and Milano Cortina 2026.</p>
+                    </div>
+                    <div class="result-item">
+                        <img src="../imgs/youtube.png" class="website-logo">
+                        <a href="#" class="website-link">Olympics</a>
+                        <p class="result-url">https://www.youtube.com/olympics</p>
+                        <p class="result-description">Welcome to the Olympics YouTube channel, where the Games never end! ...more ...more oly.ch/Olympics. Subscribe. Home. Videos. Shorts. Live. Podcasts.</p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+    </div>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
