@@ -1,81 +1,61 @@
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEARCH RESULTS</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+        .logo {
+            width: 12rem;
+            margin-top: 2.8rem;
+            margin-left: -10vw;
+        }
 
-<div class="container-fluid">
+        .search-bar {
+            max-width: 50rem;
+            margin: 3rem 0 3rem -10vw; /* Adjusted margin to move it closer */
+            padding-left: 0; /* Removed padding-left, not needed */
+        }
 
-    <div class="row">
-        <div class="col-sm-3">
-            <img src="../imgs/google.png" class="logo">
-        </div>
-        <div class="col-sm-9">
-            <div class="search-bar">
-                <form class="input-group">
-                    <input type="text" class="form-control" placeholder="Search">
-                    <span class="input-group-btn">
-                        <button class="btn btn-default" type="button">
-                            <span class="glyphicon glyphicon-search"></span>
-                        </button>
-                    </span>
-                </form>
+        .search-bar input[type="text"] {
+            padding: 10px;
+            border-radius: 20px 0 0 20px;
+            border: 1px solid #dcdcdc;
+            box-shadow: none;
+            border-right: none;
+        }
+
+        .search-bar button {
+            border-radius: 0 20px 20px 0;
+            border: 1px solid #dcdcdc;
+            background-color: #f8f8f8;
+            box-shadow: none;
+            padding: 0.62rem 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3 text-center">
+                <img src="../imgs/google.png" class="logo" alt="Logo">
+            </div>
+            <div class="col-sm-9">
+                <div class="search-bar">
+                    <form class="input-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button">
+                                <span class="glyphicon glyphicon-search"></span>
+                            </button>
+                        </span>
+                    </form>
+                </div>
             </div>
         </div>
+        <div class="row">
+            <div class="col-sm-12">
+            </div> 
+        </div>
     </div>
-
-    <div class="row">
-        <div class="col-sm-12">
-            <div class="container search-results">
-                <header>Olympics</header>
-                <div class="result-item">
-                    <a href="#" class="result-title">Example Result 1</a>
-                    <p class="result-url">https://www.example.com</p>
-                    <p class="result-description">This is a brief description of the first search result. It provides a summary of the page content.</p>
-                </div>
-                <div class="result-item">
-                    <a href="#" class="result-title">Example Result 2</a>
-                    <p class="result-url">https://www.example.com</p>
-                    <p class="result-description">This is a brief description of the second search result. It provides a summary of the page content.</p>
-                </div>
-                <div class="result-item">
-                    <a href="#" class="result-title">Example Result 3</a>
-                    <p class="result-url">https://www.example.com</p>
-                    <p class="result-description">This is a brief description of the third search result. It provides a summary of the page content.</p>
-                </div>
-            </div>
-        </div> 
-    </div>
-</div>
-
-
-<style>
-    .logo {
-        position: absolute;
-        top: 10px;
-        left: 10px;
-        z-index: 1000;
-        width: 20rem;
-        margin-top: 2rem;
-        margin-left: 3rem;
-    }
-
-    .search-bar {
-        margin: 0 auto;
-        max-width: 50rem;
-        margin-top: 5rem;
-        margin-left: -10rem;
-    }
-
-    .search-bar input[type="text"] {
-        padding: 10px;
-        border-radius: 20px 0 0 20px;
-        border: 1px solid #dcdcdc;
-        box-shadow: none;
-        border-right: none;
-    }
-
-    .search-bar button {
-        border-radius: 0 20px 20px 0;
-        border: 1px solid #dcdcdc;
-        background-color: #f8f8f8;
-        box-shadow: none;
-        padding: 0.9rem 2rem;
-    }
-</style>
