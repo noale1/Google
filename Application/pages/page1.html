@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,10 +13,18 @@
             margin-left: -10vw;
         }
 
+        .apps-icon {
+            width: 3rem;
+            margin-top: 2rem;
+            margin-left: -3.5vw;
+        }
+
         .search-bar {
             max-width: 50rem;
-            margin: 3rem 0 3rem -10vw; /* Adjusted margin to move it closer */
-            padding-left: 0; /* Removed padding-left, not needed */
+            margin: 3rem 0 3rem -10vw;
+            /* Adjusted margin to move it closer */
+            padding-left: 0;
+            /* Removed padding-left, not needed */
         }
 
         .search-bar input[type="text"] {
@@ -39,30 +48,33 @@
             background-color: transparent;
             border-bottom: 1px solid #d2d2d2;
             border-top: transparent;
-            border-left:  transparent;
+            border-left: transparent;
             border-right: transparent;
             left: 0;
             width: 100%;
         }
+
         .navbar .container {
-            padding-left: 0; 
+            padding-left: 0;
             padding-right: 0;
         }
+
         .navbar-default .navbar-toggle {
-            border: none; 
+            border: none;
         }
-        .navbar-default .navbar-nav > li > a {
+
+        .navbar-default .navbar-nav>li>a {
             color: #555555;
         }
 
-        .navbar-default .navbar-nav > li > a:hover {
-            color: #000000; 
+        .navbar-default .navbar-nav>li>a:hover {
+            color: #000000;
         }
 
 
         .website-link {
-        font-size: large;
-        line-height: 1.8;
+            font-size: large;
+            line-height: 1.8;
         }
 
         .website-logo {
@@ -71,9 +83,9 @@
             margin-bottom: 5px;
             margin-top: 5px;
         }
-
     </style>
 </head>
+
 <body>
     <div class="container-fluid">
         <div class="row">
@@ -83,7 +95,7 @@
             <div class="col-sm-9">
                 <div class="search-bar">
                     <form class="input-group">
-                        <input type="text" class="form-control" placeholder="Search">
+                        <input type="text" class="form-control" value="Olympics">
                         <span class="input-group-btn">
                             <button class="btn btn-default" type="button">
                                 <span class="glyphicon glyphicon-search"></span>
@@ -92,13 +104,15 @@
                     </form>
                 </div>
             </div>
+            <img src="../imgs/results-icon.png" class="apps-icon">
         </div>
 
         <!-- Navbar -->
         <nav class="navbar navbar-default">
             <div class="container">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#navbar-collapse" aria-expanded="false">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -125,42 +139,53 @@
         <div class="row">
             <div class="col-sm-12">
                 <div class="container search-results">
-                    <header style="font-size: 24px; line-height: 1.8;">Olympics</header>
                     <div class="result-item">
                         <img src="../imgs/olympics.png" class="website-logo">
-                        <a href="https://olympics.com/en/" class="website-link">Olympics | Olympic Games, Medals, Results & Latest News</a>
+                        <a href="https://olympics.com/en/" class="website-link">Olympics | Olympic Games, Medals,
+                            Results & Latest News</a>
                         <p class="result-url">https://olympics.com/en/</p>
-                        <p class="result-description">Official website of the Olympics. Access breaking sports news, watch video highlights, original sports series and relive the best Olympic moments.</p>
+                        <p class="result-description">Official website of the Olympics. Access breaking sports news,
+                            watch video highlights, original sports series and relive the best Olympic moments.</p>
 
-                        <a href="https://olympics.com/en/" class="website-link">Paris 2024</a>
-                        <p class="result-description" style="text-indent: 20px;">Welcome to the Paris 2024 Paralympics Games website ...</p>
-                        <a href="https://olympics.com/en/" class="website-link" style="text-indent: 20px;">Au revoir</a>
-                        <p class="result-description" style="text-indent: 20px;">Overall Schedule - Swimming - 24 July - Basketball - Athletics - ...</p>
-                        <a href="https://olympics.com/en/" class="website-link" style="text-indent: 20px;">Opening Ceremony</a>
-                        <p class="result-description" style="text-indent: 20px;">For the first time in Summer Olympics history, Paris 2024 is ...</p>
+                        <a href="https://olympics.com/en/" class="website-link" style="margin-left: 20px;">Paris
+                            2024</a>
+                        <p class="result-description" style="text-indent: 20px;">Welcome to the Paris 2024 Paralympics
+                            Games website ...</p>
+                        <a href="https://olympics.com/en/" class="website-link" style="margin-left: 20px;">Au revoir</a>
+                        <p class="result-description" style="text-indent: 20px;">Overall Schedule - Swimming - 24 July -
+                            Basketball - Athletics - ...</p>
+                        <a href="https://olympics.com/en/" class="website-link" style="margin-left: 20px;">Opening
+                            Ceremony</a>
+                        <p class="result-description" style="text-indent: 20px;">For the first time in Summer Olympics
+                            history, Paris 2024 is ...</p>
                     </div>
                     <div class="result-item">
                         <img src="../imgs/wiki.png" class="website-logo">
                         <a href="#" class="website-link">Olympic Games</a>
                         <p class="result-url">https://en.wikipedia.org/wiki/Olympic_Games</p>
-                        <p class="result-description">The modern Olympic Games are the world's leading international sporting events. They feature summer and winter sports competitions in which thousands of ...</p>
+                        <p class="result-description">The modern Olympic Games are the world's leading international
+                            sporting events. They feature summer and winter sports competitions in which thousands of
+                            ...</p>
                     </div>
                     <div class="result-item">
                         <img src="../imgs/nbc.png" class="website-logo">
                         <a href="#" class="website-link">NBC Olympics: Paris 2024 Olympic Games</a>
                         <p class="result-url">https://www.nbcolympics.com/</p>
-                        <p class="result-description">Visit NBCOlympics.com for Olympics live streams, highlights, schedules, results, news, athlete bios and more from Paris 2024 and Milano Cortina 2026.</p>
+                        <p class="result-description">Visit NBCOlympics.com for Olympics live streams, highlights,
+                            schedules, results, news, athlete bios and more from Paris 2024 and Milano Cortina 2026.</p>
                     </div>
                     <div class="result-item">
                         <img src="../imgs/youtube.png" class="website-logo">
                         <a href="#" class="website-link">Olympics</a>
                         <p class="result-url">https://www.youtube.com/olympics</p>
-                        <p class="result-description">Welcome to the Olympics YouTube channel, where the Games never end! ...more ...more oly.ch/Olympics. Subscribe. Home. Videos. Shorts. Live. Podcasts.</p>
+                        <p class="result-description">Welcome to the Olympics YouTube channel, where the Games never
+                            end! ...more ...more oly.ch/Olympics. Subscribe. Home. Videos. Shorts. Live. Podcasts.</p>
                     </div>
                 </div>
-            </div> 
+            </div>
         </div>
     </div>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </body>
+
 </html>
